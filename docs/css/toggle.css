@@ -1,0 +1,48 @@
+/* Tabs Container */
+.tabs {
+    display: flex;
+    border-bottom: 1px solid #333; /* Thin bottom border for modern look */
+    background-color: #2d2d2d; /* Optional dark background */
+}
+
+/* Individual Tab Buttons */
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    color: #ccc;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    font-size: 14px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.tab:hover {
+    color: #fff;
+}
+
+.tab.active {
+    color: #fff;
+    border-bottom: 2px solid #1e90ff; /* Highlight for active tab */
+}
+
+/* Command Block Content */
+.tab-content {
+    padding: 10px;
+    background-color: #1e1e1e; /* Matches the tab container for a unified look */
+    color: #e0e0e0;
+    font-family: monospace;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin-top: -1px; /* To blend with the tab border */
+}
+
+.command-block {
+    display: none;
+}
+
+.command-block[data-lang="bash"] {
+    display: block; /* Default tab visible */
+}

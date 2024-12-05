@@ -1,0 +1,52 @@
+site_name: Standartlar
+theme:
+  name: material
+  palette:
+    primary: indigo
+    accent: red
+  features:
+    - search.share
+    - search.highlight
+    - content.tabs.link
+  language: tr
+nav:
+  - Home: index.md
+  - Contribute: contrib.md
+  - DataFocus:
+    - Intro: datafocus/introduction.md
+  - DataTouch:
+    - Intro: datatouch/introduction.md
+  - TDM:
+    - Intro: tdm/introduction.md
+  - DevOps:
+    - Intro: devops/introduction.md
+    - Git: devops/git.md
+    - CI&CD: devops/cicd.md
+  - Dökümantasyon:
+    - Intro: documentation/introduction.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - footnotes
+  - def_list
+
+
+extra: 
+  version:
+    provider: mike
+
+extra_javascript:
+  - js/toggle.js
+
+extra_css:
+  - css/toggle.css

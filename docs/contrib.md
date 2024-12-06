@@ -21,7 +21,7 @@ This repository hosts the source code and configuration for generating a documen
 
 ## Getting Started
 
-To get started with the project, you'll need:
+"To get started with the project, you'll need:"
 - Python 3.7 or later installed on your system.
 - A package manager like `pip` or `pipenv`.
 
@@ -33,28 +33,34 @@ Follow the steps below to prepare your local development environment:
 
 ### Prerequisites
 
-Ensure you have the following installed:
-1. **Python**: Download from [python.org](https://www.python.org/downloads/).
-2. **Git**: Download from [git-scm.com](https://git-scm.com/).
-3. **Node.js (Optional)**: For additional tooling if required.
+!!! note "Ensure you have the following installed:"
+
+  1. **Python**: Download from [python.org](https://www.python.org/downloads/).
+  2. **Git**: Download from [git-scm.com](https://git-scm.com/).
+  3. **Node.js (Optional)**: For additional tooling if required.
 
 ### Setup Steps
 
 1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/your-username/your-mkdocs-repo.git
-   cd your-mkdocs-repo
+    ```bash
+    git clone https://github.com/your-username/your-mkdocs-repo.git
+   
+    cd your-mkdocs-repo
     ```
 2. **Create a Virtual Environment**: 
-    ```bash
-    source venv/bin/activate   # On Linux/MacOS
-    venv\Scripts\activate      # On Windows
+=== "Mac/Linux"
+    ``` bash
+        source venv/bin/activate 
+    ```
+=== "Windows"
+    ``` cmd
+        venv\Scripts\activate 
     ```
 3. **Install Dependencies**:
     ```bash
     pip install -r requirements.txt
     ```
 4. **Run the Development Server**: 
-   ```bash
-   mkdocs serve
-   ```
+    ```bash
+    mkdocs serve
+    ```

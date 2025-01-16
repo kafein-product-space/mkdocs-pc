@@ -1,3 +1,5 @@
-#! /bin/sh
+#!/bin/sh
+set -e
 
-nginx -g 'daemon off;'
+# Start Nginx
+exec nginx -g 'daemon off;'

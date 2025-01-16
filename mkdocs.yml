@@ -1,7 +1,8 @@
-site_name: Standartlar
-site_url: http://localhost:3000
+site_name: Kafein Product
+site_url: https://documentation.netfein.com
 theme:
   name: material
+  logo: https://kafein.fra1.digitaloceanspaces.com/kafeinweb/kafein-logo-dikey-sb-1-1f7d6.png
   palette:
     primary: indigo
     accent: red
@@ -16,9 +17,16 @@ nav:
   - DataFocus:
     - Intro: datafocus/introduction.md
   - DataTouch:
-    - Intro: datatouch/introduction.md
+    - Intro: datatouch/intro.md
+    - About: datatouch/about.md
+    - Preparation: datatouch/preparation.md
+    - Docker Installation: shared/docker_installation.md
+    - Architecture: datatouch/architecture.md
+    - Quickstart Installation: datatouch/quickstart.md
+
   - TDM:
-    - Intro: tdm/introduction.md
+    - Intro: tdm/01_intro.md
+    - About: tdm/02_about.md
   - DevOps:
     - Intro: devops/introduction.md
     - Git: devops/git.md
